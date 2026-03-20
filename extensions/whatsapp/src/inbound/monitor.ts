@@ -199,7 +199,7 @@ export async function monitorWebInbox(options: {
     const phoneNumber = jidToE164(phoneJid);
 
     return {
-      lid: isLid ? lid : "",
+      lid,
       phoneNumber,
       contact: undefined, // Contact info not available via this API
     };
